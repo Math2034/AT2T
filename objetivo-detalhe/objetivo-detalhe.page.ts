@@ -7,7 +7,6 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./objetivo-detalhe.page.scss'],
 })
 export class ObjetivoDetalhePage implements OnInit {
-  
   objetivo: any;
   constructor(private route: ActivatedRoute, private router: Router) { }
 

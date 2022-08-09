@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>{{objetivo.nome}}</ion-title>
+    <ion-title>{{objetivo.codigo}}</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content color="light">
@@ -13,10 +13,7 @@
       <ion-icon *ngIf="!objetivo.imagem" name="videocam-off"></ion-icon>
     </ion-card-header>
     <ion-card-content>
-      <h1>{{objetivo.nome}} <ion-icon name="star" [color]="objetivo.favorito===true ? 'warning' : ('light')"></ion-icon></h1>
+      <h1>{{objetivo.descricao}} <ion-icon name="star" [color]="objetivo.favorito===true ? 'warning' : ('light')"></ion-icon></h1>
     </ion-card-content>
-    <ion-item>
-      <ion-badge color="medium" *ngFor="let descricao of objetivo.descricao">{{descricao}}</ion-badge>
-    </ion-item>
   </ion-card>
 </ion-content>

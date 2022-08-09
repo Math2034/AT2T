@@ -1,13 +1,13 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
+  <ion-toolbar color="dark">
     <ion-title>
       ODS
     </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-  <ion-list *ngIf="listaObjetivos">
-    <ion-item-sliding *ngFor="let objetivo of listaObjetivos">
+  <ion-list *ngIf="lista">
+    <ion-item-sliding *ngFor="let objetivo of lista">
       <ion-item lines="full" (click)="exibirObjetivo(objetivo)">
         <ion-thumbnail slot="start">
           <img *ngIf="objetivo.imagem" src="{{objetivo.imagem}}" />
